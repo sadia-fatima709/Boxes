@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
-
+h1{
+    text-align: center;
+}
 .container{
     position: relative;
     width: 900px;
@@ -21,44 +23,87 @@
     background-color: brown;
     left: 20px;
     top: 70px;
+    box-shadow: 2px 2px brown;
 }
 .box2{
     background-color:cadetblue;
     left: 120px;
     top: 160px;
+    box-shadow: 2px 2px rgb(35, 129, 133);
 }
 .box3{
     background-color:crimson;
     left: 210px;
     top: 259px;
+    /* box-shadow: 2px 2px crimson; */
+    border-image-width:
+    13px 13px 13px 13px;
+    border-image-outset:
+    13px 13px 13px 13px;
+    border-image-repeat:
+    repeat repeat;
+    border-image-source:
+    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-style:
+    solid;  
 }
 .box4{
     background-color: hotpink;
     left: 310px;
     top: 170px;
+    box-shadow: 2px 2px hotpink;
 }
 .box5{
     background-color: lightblue;
-    left: 376px;
+    left: 389px;
     top: 70px;
+    border-image-slice:
+    13 13 13 13;
+    border-image-width:
+    13px 13px 13px 13px;
+    border-image-outset:
+    13px 13px 13px 13px;
+    border-image-repeat:
+    repeat repeat;
+    border-image-source:
+    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-style:
+    solid;  
+    box-shadow: 2px 2px lightblue;
 }
 .box6{
     background-color: lightgreen;
-    left: 400px;
-    top: 140px;
+    left: 469px;
+    top: 170px;
+    box-shadow: 2px 2px lightgreen;
 }
 .box7{
     background-color:gold;
-    left: 420px;
-    top: 210px;
+    left: 566px;
+    top: 266px;
+    box-shadow: 2px 2px gold;
+    border-image-slice:
+    13 13 13 13;
+    border-image-width:
+    13px 13px 13px 13px;
+    border-image-outset:
+    13px 13px 13px 13px;
+    border-image-repeat:
+    repeat repeat;
+    border-image-source:
+    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-style:
+    solid; 
 }
 .box8{
     background-color:blue;
-    left: 480px;
-    top: 125px;
+    left: 659px;
+    top: 169px;
+    box-shadow: 2px 2px blue;
 }
 .box9{
     background-color: plum;
-    left: 540px;
-    top: 50px;
+    left: 760px;
+    top: 68px;
+    box-shadow: 2px 2px plum;
 }
