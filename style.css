@@ -1,109 +1,147 @@
-*{
+/* *{
     box-sizing: border-box;
+} */
+body{
+    
+     background: linear-gradient(125deg in oklch longer hue, #ffe4e6, #fbcfe8, #ddd6fe);
+
 }
-h1{
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.animated-text {
+ 
+    height: 200px;
+}
+
+.animated-text svg {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.animated-text text {
+    animation: stroke-draw 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 53px;
+}
+
+@keyframes stroke-draw {
+    0% {
+        fill: rgba(44,56,104,0);
+        stroke: rgba(54,95,160,1);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: rgba(44,56,104,0);
+        stroke: rgba(54,95,160,1);
+    }
+    80% {
+        fill: rgba(44,56,104,0);
+        stroke: rgba(54,95,160,1);
+        stroke-width: 3;
+    }
+    100% {
+        fill: rgba(44,56,104,1);
+        stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
 }
 .container{
+    
+    display: inline-block;
     position: relative;
-    width: 900px;
-    height: 400px;
-    margin: 20px auto;
+    width: 1250px;
+    height: 578px;
+    margin: 20px 190px ;
     background-color: beige;
+    padding: 10px 100px 80px 70px;
+  
+    
      
 }.box{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 170px;
     padding: 10px;
     text-align: center;
-    border: 1px solid #999;
+    border: 4px solid #eb2193 ;
+   
+
+    
 } 
 .box1{
-    background-color: brown;
-    left: 20px;
-    top: 70px;
-    box-shadow: 2px 2px brown;
+    background-color: rgb(253, 162, 162);
+    left: 30px;
+    top: 60px;
+    box-shadow: 4px 4px rgb(253, 162, 162);
+ background-image: url(https://tse4.mm.bing.net/th/id/OIP.VdDc3iT3PCrJnnsiThNzGgHaF_?r=0&pid=Api&h=220&P=0);
+
 }
 .box2{
     background-color:cadetblue;
-    left: 120px;
-    top: 160px;
-    box-shadow: 2px 2px rgb(35, 129, 133);
+    left: 130px;
+    top: 259px;
+    box-shadow: 4px 4px rgb(35, 129, 133);
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.WdUjooYsGw5I04qYSIKkswHaHa?r=0&pid=Api&h=220&P=0);
 }
 .box3{
-    background-color:crimson;
-    left: 210px;
-    top: 259px;
-    /* box-shadow: 2px 2px crimson; */
-    border-image-width:
-    13px 13px 13px 13px;
-    border-image-outset:
-    13px 13px 13px 13px;
-    border-image-repeat:
-    repeat repeat;
-    border-image-source:
-    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
-    border-style:
-    solid;  
+    background-color:rgb(248, 97, 127);
+    left: 297px;
+    top: 449px;
+    box-shadow: 4px 4px rgb(248, 97, 127);
+   background-image: url(https://tse4.mm.bing.net/th/id/OIP.Bk2XqMWSZVMmJcF7AWKayQHaHa?r=0&pid=Api&h=220&P=0);
 }
+
 .box4{
     background-color: hotpink;
-    left: 310px;
-    top: 170px;
-    box-shadow: 2px 2px hotpink;
+    left: 439px;
+    top: 269px;
+    box-shadow: 4px 4px hotpink;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.NDQrYVdgm840tGPUBiQElAHaE7?r=0&pid=Api&h=220&P=0);
+
 }
 .box5{
     background-color: lightblue;
-    left: 389px;
-    top: 70px;
-    border-image-slice:
-    13 13 13 13;
-    border-image-width:
-    13px 13px 13px 13px;
-    border-image-outset:
-    13px 13px 13px 13px;
-    border-image-repeat:
-    repeat repeat;
-    border-image-source:
-    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
-    border-style:
-    solid;  
-    box-shadow: 2px 2px lightblue;
+    left: 579px;
+    top: 76px;
+    box-shadow: 4px 4px lightblue;
+   background-image: url(https://tse3.mm.bing.net/th/id/OIP.fGKykZUYXUEnweKmX0v2bQHaEG?r=0&pid=Api&h=220&P=0);
+
 }
 .box6{
     background-color: lightgreen;
-    left: 469px;
-    top: 170px;
-    box-shadow: 2px 2px lightgreen;
+    left: 719px;
+    top: 269px;
+    box-shadow: 4px 4px lightgreen;
+   background-image: url(dark.png);
+   
+
 }
 .box7{
     background-color:gold;
-    left: 566px;
-    top: 266px;
-    box-shadow: 2px 2px gold;
-    border-image-slice:
-    13 13 13 13;
-    border-image-width:
-    13px 13px 13px 13px;
-    border-image-outset:
-    13px 13px 13px 13px;
-    border-image-repeat:
-    repeat repeat;
-    border-image-source:
-    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
-    border-style:
-    solid; 
+    left: 879px;
+    top: 449px;
+    box-shadow: 4px 4px gold;
+   background-image: url(dark1.png);
+    
 }
 .box8{
-    background-color:blue;
-    left: 659px;
-    top: 169px;
-    box-shadow: 2px 2px blue;
+    background-color:rgb(158, 158, 252);
+    left: 1029px;
+    top: 259px;
+   background-image: url(https://tse4.mm.bing.net/th/id/OIP.Bk2XqMWSZVMmJcF7AWKayQHaHa?r=0&pid=Api&h=220&P=0);
+    box-shadow: 4px 4px rgb(150, 150, 233);
 }
 .box9{
     background-color: plum;
-    left: 760px;
-    top: 68px;
-    box-shadow: 2px 2px plum;
+    left: 1189px;
+    top: 59px;
+    box-shadow: 4px 4px plum;
+   background-image: url(beauty.jpg);
+
 }
